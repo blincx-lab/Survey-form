@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>
+        Survey-Form
+    </title>
+    <h1 id="survey-form">Survey-Form</h1>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <h3>Tell us About Yourself.</h3>
+            <label id="name-label">Enter your name.. <input required placeholder="Enter your name.." id="name" type="text"></label>
+            <label id="email-label">Enter your Email address.. <input id="email" type="email" placeholder="Enter your Email Address"></label>
+            <label id="number-label">Enter your age.. <input type="number" min="13" max="120" required placeholder="Enter your age.." id="number"></label>
+            <label id="bio-label"><textarea id="bio" rows="3" cols="30" placeholder="Tell us a little about yourself.."></textarea></label>
+        </fieldset>
+        <fieldset>
+            <h3>How did you hear about us?</h3>
+            <label>
+                <select>
+                    <option>(select one)</option>
+                    <option>Google</option>
+                    <option>YouTube</option>
+                    <option>Other</option>
+                </select>
+            </label>
+        </fieldset>
+
+            <h3>How would you rate our services?</h3>
+            <label>5 *<input value="1" type="radio"></label>
+            <label>4 *<input value="2" type="radio"></label>
+            <label>3 *<input vlaue="3" type="radio"></label>
+            <label>2 *<input value="4" type="radio"></label>
+            <label>1 *<input value="5" type="radio"></label>
+        <fieldset></fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
